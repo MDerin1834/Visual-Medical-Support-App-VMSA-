@@ -172,11 +172,7 @@ model = genai.GenerativeModel(model_name = "gemini-1.5-flash-002",
 
 st.set_page_config(page_title = "VMSA Medical Support App", page_icon = ":stethoscope:")
 
-st.image("imgg.webp", width=650)
-
-
-
-st.markdown("<h1 style='text-align: center;'>Visual Medical Support App</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>🩺 Visual Medical Support App 🩺</h1>", unsafe_allow_html=True)
 st.markdown("---", unsafe_allow_html=True)
 
 st.subheader("This is an AI-powered app for possible diagnosis identification and treatment recommendations for the uploaded vital image.")
@@ -210,4 +206,4 @@ if submit_button:
     response = model.generate_content(prompt_parts)
     st.write(response.text)
 
-st.subheader("Please understand that this app is only for suggestions; you should see a doctor for professional help.")
+st.subheader("Please make sure you understand that this app is only for suggestions; you should see a doctor for professional help.")
